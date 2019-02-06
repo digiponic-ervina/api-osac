@@ -18,5 +18,6 @@ $router->get('/', function () use ($router) {
 
 $router->get('/service', 'ServiceController@data');
 $router->post('/transaction', 'TransactionController@post');
+$router->get('/transaction/show', 'TransactionController@getAllTransactions');
 $router->get('/generals', 'GeneralsController@data');
 $router->get('/report', 'ReportController@data');
